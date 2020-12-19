@@ -4,21 +4,21 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: `${__dirname}/src/pages`
+        path: `${__dirname}/src/pages`,
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
-        path: `${__dirname}/src/posts`
+        path: `${__dirname}/src/posts`,
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`
+        path: `${__dirname}/src/images`,
       }
     },
     `gatsby-plugin-sharp`, 
@@ -37,13 +37,13 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        font: ['roboto mono', `muli\:400,400i,700,700i`],
-        display: "swap",
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-fonts`,
+    //   options: {
+    //     font: ['roboto mono', `muli\:400,400i,700,700i`],
+    //     display: "swap",
+    //   },
+    // },
   ],
   
 }
