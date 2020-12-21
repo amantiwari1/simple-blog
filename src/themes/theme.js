@@ -29,8 +29,8 @@ export default {
   animations: {
     button: "box-shadow 0.3s ease",
     link: "color 0.2s ease",
-    shadows: {
-      shadow1: "0px 5px 20px rgba (30, 30, 31, 0.05)",
-    },
   },
+  shadows: {
+    shadow1: "0px 5px 20px rgba (30, 30, 31, 0.05)",
+    },
 }

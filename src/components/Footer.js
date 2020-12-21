@@ -58,7 +58,9 @@ export const Footer = () => {
             <img height="30px" src={data1.facebook.publicURL} alt="fb" />
           </a>
         </FooterSocialIcons>
-        <P size="xsmall" color="dark3">@ 2020 Copyright</P>
+        <P size="xsmall" color="dark3">
+          @ 2020 Copyright
+        </P>
       </FooterSocialWrapper>
     </FooterWrapper>
   )

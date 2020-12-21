@@ -1,15 +1,15 @@
 import styled from "styled-components"
 
 export const P = styled.p`
-  margin: ${props => props.margin ? props.margin : 0};
+  margin: ${props => (props.margin ? props.margin : 0)};
   font-size: ${props => {
     switch (props.size) {
       case "medium":
         return "1.4375rem"
       case "small":
-        return "1.375rem"
+        return "1rem"
       case "xsmall":
-        return "1.125rem"
+        return "0.75rem"
       default:
         return "1.4375rem"
     }
@@ -19,7 +19,7 @@ export const P = styled.p`
       case "medium":
         return "1.125rem"
       case "small":
-        return "1rem"
+        return "1.5rem"
       case "xsmall":
         return "0.875rem"
       default:
@@ -27,8 +27,8 @@ export const P = styled.p`
     }
   }};
   text-decoration: ${props =>
-  props.textDecoration ? props.textDecoration : "none" };
-  font-weight:  ${props => {
+    props.textDecoration ? props.textDecoration : "none"};
+  font-weight: ${props => {
     switch (props.weight) {
       case "normal":
         return 400
@@ -56,14 +56,13 @@ export const P = styled.p`
     }
   }};
 
-  text-align: ${props => props.textAlign ? props.textAlign : "left" };
+  text-align: ${props => (props.textAlign ? props.textAlign : "left")};
 `
 
 export const H1 = styled.h1`
-
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-    color: ${props => {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  color: ${props => {
     switch (props.color) {
       case "dark1":
         return props.theme.colors.dark1
@@ -81,15 +80,13 @@ export const H1 = styled.h1`
   }};
 
   font-weight: 400;
-  text-align: ${props => props.textAlign ? props.textAlign : "left" };
-  margin: ${props => props.margin ? props.margin : 0};
-
+  text-align: ${props => (props.textAlign ? props.textAlign : "left")};
+  margin: ${props => (props.margin ? props.margin : 0)};
 `
 export const H2 = styled.h2`
-
-    font-size: 1.5rem;
-    line-height: 1.875rem;
-    color: ${props => {
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  color: ${props => {
     switch (props.color) {
       case "dark1":
         return props.theme.colors.dark1
@@ -107,8 +104,6 @@ export const H2 = styled.h2`
   }};
 
   font-weight: 400;
-  text-align: ${props => props.textAlign ? props.textAlign : "left" };
-  margin: ${props => props.margin ? props.margin : 0};
-
-
+  text-align: ${props => (props.textAlign ? props.textAlign : "left")};
+  margin: ${props => (props.margin ? props.margin : 0)};
 `
